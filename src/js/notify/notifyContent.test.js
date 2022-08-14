@@ -6,6 +6,6 @@ describe('test create notify content template', () => {
     });
 
     it('createContentTemplate([]) should throw error exception with "content must be string"', () => {
-        expect(() => createContentTemplate("")).toThrowError('content must be string');
+        expect(() => createContentTemplate([])).toThrowError('content must be string');
     });
 });
