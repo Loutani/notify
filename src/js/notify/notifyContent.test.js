@@ -13,7 +13,7 @@ describe('test create notify content template', () => {
         expect(() => createContentTemplate([])).toThrowError('content must be string');
     });
 
-    it('createContentTemplate("email is required") should return "validation error" as string', () => {
+    it('createContentTemplate("email is required") should return "email is required" as string', () => {
         let contentTemplate = createContentTemplate('email is required'),
         contentTemplateAsElement = document.createElement('div');
 

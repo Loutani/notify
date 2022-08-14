@@ -3,5 +3,6 @@ export const createContentTemplate = (content) => {
         throw new Error('content must be string');
     }
 
-    return true
+    let contentTemplate = `<div class="toast-body">${content}</div>`;
+    return contentTemplate
 }
