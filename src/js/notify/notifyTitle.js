@@ -3,5 +3,5 @@ export const createContentTemplate = (title) => {
         throw new Error('title must be string')
     }
 
-    return true
+    return title
 }
