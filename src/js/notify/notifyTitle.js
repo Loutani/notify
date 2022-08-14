@@ -3,5 +3,8 @@ export const createContentTemplate = (title) => {
         throw new Error('title must be string')
     }
 
-    return title
+    let notifyTitleTemplate = `<div class="toast-header">
+                                    <strong class="toast-title">${title}</strong>
+                                </div>`
+    return notifyTitleTemplate
 }
